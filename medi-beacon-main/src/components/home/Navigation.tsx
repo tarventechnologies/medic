@@ -6,8 +6,8 @@ import { cn } from "@/lib/utils";
 const navigation = [
   { name: "Features", href: "#features" },
   { name: "Benefits", href: "#benefits" },
-  { name: "Pricing", href: "#pricing" },
-  { name: "Contact", href: "#contact" },
+  { name: "Premium", href: "#pricing" },
+  // { name: "Contact", href: "#contact" },
 ];
 
 export function Navigation() {
@@ -16,14 +16,14 @@ export function Navigation() {
   return (
     <header className="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-lg border-b border-border">
       <nav className="container mx-auto px-6 flex items-center justify-between h-16">
-        {/* Logo */}
-        <div className="flex items-center gap-2">
+        {/* Logo → Clickable to go home */}
+        <a href="#home" className="flex items-center gap-2">
           <Activity className="h-8 w-8 text-primary" />
           <div>
             <div className="text-xl font-bold text-foreground">MediCare</div>
             <div className="text-xs text-muted-foreground">Healthcare Dashboard</div>
           </div>
-        </div>
+        </a>
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center gap-8">
